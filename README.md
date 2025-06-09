@@ -8,7 +8,7 @@
 - Thread-safe, lock-free round-robin load balancer (skips degraded instances)
 - Degrades slow instances based on response latency; auto-recovers after cooldown
 - Robust error handling and detailed logging for traceability
-- Unit tests for load balancer, router service, and health monitor 
+- Unit tests for router service, echo handler, health monitor, and load balancer 
 - Clean, layered architecture for extensibility and production maintainability
 
 ### Out of Scope (Future Enhancements)

@@ -39,6 +39,7 @@ public class RouterService {
         try {
             response = client.send(request, HttpResponse.BodyHandlers.ofString());
         } catch (IOException | InterruptedException e) {
+            System.err.println("[ERROR] Request to " + instance + " failed" + e.getMessage());
             monitor.reportResponseTime(instance, 9999);
             throw new IOException("Request to " + instance + " failed", e);
         }

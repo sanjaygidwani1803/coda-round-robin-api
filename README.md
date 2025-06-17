@@ -7,6 +7,7 @@
 - Configurable target instances via `targets.json`
 - Thread-safe, lock-free round-robin load balancer (skips degraded instances)
 - Degrades slow instances based on response latency; auto-recovers after cooldown
+- Automatically retries failed requests up to `n` times on alternative healthy instances
 - Robust error handling and detailed logging for traceability
 - Unit tests for router service, echo handler, health monitor, and load balancer 
 - Clean, layered architecture for extensibility and production maintainability
